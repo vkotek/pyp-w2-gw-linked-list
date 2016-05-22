@@ -7,6 +7,8 @@ It's constructed using different Nodes. Each node has a value and a reference to
 
 ![linked_list](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/816px-Singly-linked-list.svg.png)
 
+Values in the list are heterogeneous, meaning that one single `LinkedList` might contain values of many different types (ie: int, string, bools, other objects, etc).
+
 As a regular Python `list`, it must be an ordered collection. Meaning that new Nodes in the list must be appended and iterated respecting certain order.
 
 To create a new linked list, you just have to instantiate the `LinkedList` class, like this:
