@@ -31,7 +31,7 @@ Appending new elements to the list is possible by calling the `append` method:
 >>> l.append("good bye")
 ```
 
-To get the counter of how many elements are contained in the list at certain time, call the `count` method, or just apply the `len()` built-in function to the list:
+To get the length of the list at certain time, call the `count` method, or just apply the `len()` built-in function to the list:
 
 ```python
 >>> l.count()
@@ -40,7 +40,7 @@ To get the counter of how many elements are contained in the list at certain tim
 3
 ```
 
-You must also implement support to concatenate other linked lists to the current one. As in Python `list`, there must be two possible ways of doing that, one mutating the original list:
+You must also implement support to concatenate other linked lists to the current one. As in Python's `list`, there must be two possible ways of doing that, one mutating the original list:
 
 ```python
 >>> l = LinkedList([1, 2, 3])
@@ -86,7 +86,7 @@ To see the String representation of a `LinkedList` at any time, you must use the
 "[2, 4, 6, 8, 10]"
 ```
 
-There's a last, but not less important requirement. Two `LinkedList` contained the same elements in the same order must be considered as equal:
+There's a last, but not less important requirement. Two `LinkedList`s containing the same elements in the same order must be considered equal:
 
 ```python
 >>> LinkedList([2, 4, 6, 8]) == LinkedList([2, 4, 6, 8])
