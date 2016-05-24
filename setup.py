@@ -35,7 +35,6 @@ setup(
         'pytest==2.9.1',
         'pytest-cov==2.2.1',
         'coverage==4.0.3',
-        'freezegun==0.3.7',
     ],
     zip_safe=False,
     cmdclass={'test': PyTest},
