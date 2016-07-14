@@ -28,6 +28,9 @@ class AbstractLinkedList(object):
     def __eq__(self, other):
         raise NotImplementedError()
 
+    def __ne__(self, other):
+        raise NotImplementedError()
+
     def append(self, element):
         raise NotImplementedError()
 
