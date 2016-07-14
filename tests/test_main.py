@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 
-from linked_list.main import Node, LinkedList   
+from linked_list import Node, LinkedList
 
 
 class LinkedListTestCase(unittest.TestCase):

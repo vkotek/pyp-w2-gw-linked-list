@@ -94,3 +94,7 @@ True
 >>> LinkedList([2, 4, 6, 8]) == LinkedList([4, 2, 6, 8])
 False
 ```
+
+## Extra: coverage
+
+Once your LinkedList is ready and your tests are passing, check to see the coverage report. It'll surely be missing a few lines, as we haven't included tests for `__getitem__` and `__ne__`. Write the missing tests to take the coverage above 95%.
