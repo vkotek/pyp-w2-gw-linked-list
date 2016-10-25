@@ -5,11 +5,6 @@ from linked_list import Node, LinkedList
 
 
 class LinkedListTestCase(unittest.TestCase):
-    def test_node_str_representation(self):
-        self.assertEqual(str(Node(9)), "Node(9) > /")
-        n = Node(9)
-        n.next = Node('X')
-        self.assertEqual(str(n), "Node(9) > Node(X)")
 
     def test_not_equal(self):
         self.assertNotEqual(LinkedList([1]), LinkedList([]))
