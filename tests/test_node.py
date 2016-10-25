@@ -5,7 +5,7 @@ from linked_list import Node
 
 
 class NodeTestCase(unittest.TestCase):
-    
+
     def test_node_str_representation_without_next(self):
         self.assertEqual(str(Node(9)), "Node(9) > /")
 
