@@ -6,6 +6,23 @@ from linked_list import Node, LinkedList
 
 class LinkedListTestCase(unittest.TestCase):
 
+    def test_not_equal(self):
+        self.assertNotEqual(LinkedList([1]), LinkedList([]))
+        self.assertNotEqual(LinkedList([]), LinkedList([1]))
+        self.assertNotEqual(LinkedList([1, 2]), LinkedList([2, 1]))
+        self.assertNotEqual(LinkedList([1, 2]), LinkedList([2, 1]))
+        self.assertNotEqual(LinkedList([1, 2, 3]), LinkedList([1, 2]))
+
+    def test_get_item(self):
+        self.assertEqual(LinkedList([1, 2, 3])[0], 1)
+        self.assertEqual(LinkedList([1, 2, 3])[1], 2)
+        self.assertEqual(LinkedList([1, 2, 3])[2], 3)
+
+        with self.assertRaises(IndexError):
+            LinkedList([1, 2, 3])[4]
+        with self.assertRaises(IndexError):
+            LinkedList([])[0]
+
     def test_creation_and_equal(self):
         l1 = LinkedList([1, 2, 3])
 
